@@ -23,7 +23,7 @@ function App() {
         {links.map((link, index) => {
           return (
             <li key={index}>
-              <a target="_blank" href={links.url} rel="noreferrer">
+              <a target="_blank" href={link.url} rel="noreferrer">
                 {link.title} (from {link.origin})
               </a>
             </li>
