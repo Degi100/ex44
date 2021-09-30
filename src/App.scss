@@ -1,7 +1,25 @@
 body {
 	padding: 20px;
 	font-family: arial;
-	App {
+	.App {
+		ul {
+			background-color: rgb(163, 229, 255);
+			border: 1px black solid;
+			padding: 5px;
+			margin: 20px;
+			li {
+				list-style-type: none;
+				margin: 10px;
+				a{	
+					color: black;
+					text-decoration: none;
+				}
+
+				a:hover{
+					background-color: yellow;
+				}
+			}
+		}
 		font-size: 1.3rem;
 		h1 {
 			font-size: 2rem;
