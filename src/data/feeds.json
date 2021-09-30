@@ -23,8 +23,13 @@
     "name": "Peter",
     "linksUrl": "https://raw.githubusercontent.com/heavypete/455netlifylaunch/main/src/data/links.json"
   },
-  {
+   {
     "name": "Elisa",
     "linksUrl": "https://raw.githubusercontent.com/elis-11/online-links/main/src/data/links.json"
+  },
+ {
+    "name": "RENE",
+    "linksUrl": "https://raw.githubusercontent.com/Degi100/ex44/main/src/data/links.json"
   }
+
 ]

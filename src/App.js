@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
-import feed from "./data/feeds.json"
+import feed from "./data/feeds.json";
 import "./App.scss";
 
 function App() {
   const [links, setLinks] = useState([]);
 
   useEffect(() => {
-    feed.forEach(feed => {
-    (async () => {
-      const response = await fetch(feed.linksUrl);
-      const tempLinks = await response.json();
-      tempLinks.forEach(tempLink => tempLink.origin = feed.name);
-      setLinks(n => [...n, ...tempLinks]);
-     })();
-    })
+    feed.forEach((feed) => {
+      (async () => {
+        const response = await fetch(feed.linksUrl);
+        const tempLinks = await response.json();
+        tempLinks.forEach((tempLink) => (tempLink.origin = feed.name));
+        setLinks((n) => [...n, ...tempLinks]);
+      })();
+    });
   }, []);
 
   return (
@@ -24,8 +24,9 @@ function App() {
           return (
             <li key={index}>
               <a target="_blank" href={link.url} rel="noreferrer">
-                {link.title} (from {link.origin})
-              </a>
+                {link.title}
+              </a>{" "}
+              (from {link.origin})
             </li>
           );
         })}
